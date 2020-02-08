@@ -14,7 +14,7 @@ class ReportsController extends Controller
 
     public function index()
     {
-        $data = Reports::orderBy('id', 'desc')->get();
+        $data = Reports::orderBy('id', 'desc')->with(['issues'])->get();
 
         return view($this->parent . '.view')->with(['data' => $data]);
 

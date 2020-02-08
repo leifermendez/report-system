@@ -47,7 +47,7 @@
                             {{--                                    {{ $data->description ?: '' }}--}}
                             {{--                                </textarea>--}}
                             {{--                            </div>--}}
-                            <button class="mt-1 btn btn-primary">Enviar</button>
+
                         </form>
                     </div>
                 </div>

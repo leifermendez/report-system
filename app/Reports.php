@@ -13,12 +13,12 @@ class Reports extends Model
     public function project()
     {
         return $this->belongsTo('App\Projects', 'projects_id', 'id')
-            ->with(['organization'])->withTrashed();
+            ->with(['organization']);
     }
 
     public function issues()
     {
         return $this->hasMany('App\Issues', 'projects_id', 'projects_id')
-            ->with(['issue_features'])->withTrashed();
+            ->with(['issue_features']);
     }
 }

@@ -17,7 +17,7 @@
                             <div class="page-title-actions">
                                 <a href="/reports/create" type="button" data-toggle="tooltip" title=""
                                    data-placement="bottom"
-                                   class="btn-primary mr-3 btn " data-original-title="Example Tooltip">
+                                   class="btn-primary mr-3 btn over-block-card" data-original-title="Example Tooltip">
                                     Nuevo
                                 </a>
                             </div>
@@ -25,53 +25,62 @@
                     </div>
 
                     <div class="card-body">
-                        <table class="mb-0 table">
-                            <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Fecha</th>
-                                <th>Proyecto</th>
-                                <th></th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            @foreach($data as $d)
-                                <tr>
-                                    <th scope="row">{{$d->id}}</th>
-                                    <td> {{Carbon\Carbon::parse($d->date_begin)->format('d M Y')}} /
-                                        {{Carbon\Carbon::parse($d->date_finish)->format('d M Y')}}</td>
-                                    <td>[{{$d->project->organization->name}}] {{$d->project->title}}</td>
-                                    <td>
-                                        <div class="d-flex">
-                                            <a href="/reports/{{$d->id}}" class="btn btn-sm"
-                                               data-toggle="tooltip" title=""
-                                               data-original-title="Issues">
-                                                <i class="fas fa-eye"></i>
-                                            </a>
-                                            <a href="/reports/{{$d->id}}/edit" class="btn btn-sm"
-                                               data-toggle="tooltip" title=""
-                                               data-original-title="Editar">
-                                                <i class="fas fa-edit"></i>
-                                            </a>
-                                            <a href="/issues/create?report={{$d->id}}" class="btn btn-sm"
-                                               data-toggle="tooltip" title=""
-                                               data-original-title="Issues">
-                                                <i class="fas fa-list"></i>
-                                            </a>
-                                            <form method="POST" action="/reports/{{$d->id}}">
-                                                {{ csrf_field() }}
-                                                {{ method_field('DELETE') }}
-                                                <button class="btn-sm btn">
-                                                    <i class="fas fa-trash-alt"></i>
-                                                </button>
-                                            </form>
+                        @foreach($data as $d)
+                            <div class="card mb-3">
+                                <div class="card-header d-flex justify-content-between">
+                                    <div data-toggle="tooltip"
+                                         data-original-title="{{$d->project->organization->name}}">
+                                        {{Carbon\Carbon::parse($d->date_begin)->format('d M Y')}} /
+                                        {{Carbon\Carbon::parse($d->date_finish)->format('d M Y')}} <i
+                                            class="fas fa-angle-right"></i>
+                                         {{$d->project->title}}
+                                        <span class="font-italic">({{array_sum(array_column($d->issues->toArray(), 'hours'))}})</span>
+                                    </div>
+                                    <div class="d-flex">
+                                        <a href="/reports/{{$d->id}}" class="btn btn-sm"
+                                           data-toggle="tooltip" title=""
+                                           data-original-title="Issues">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="/reports/{{$d->id}}/edit" class="btn btn-sm"
+                                           data-toggle="tooltip" title=""
+                                           data-original-title="Editar">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
+                                        <a href="/issues/create?report={{$d->id}}" class="btn btn-sm"
+                                           data-toggle="tooltip" title=""
+                                           data-original-title="Issues">
+                                            <i class="fas fa-list"></i>
+                                        </a>
+                                        <form method="POST" action="/reports/{{$d->id}}">
+                                            {{ csrf_field() }}
+                                            {{ method_field('DELETE') }}
+                                            <button class="btn-sm btn">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </button>
+                                        </form>
 
-                                        </div>
-                                    </td>
-                                </tr>
-                            @endforeach
-                            </tbody>
-                        </table>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <blockquote class="blockquote mb-0 report-text-block">
+                                        <ul class="m-0 p-0">
+                                            @foreach($d->issues as $i)
+                                                <li data-toggle="tooltip"
+                                                    data-original-title="{{$i->hours}} horas"
+                                                    class="badge badge-light-gray mb-1">{{$i->title}}</li>
+                                            @endforeach
+
+                                        </ul>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="col-12">
+
+
+                            </div>
+
+                        @endforeach
                     </div>
                 </div>
             </div>
