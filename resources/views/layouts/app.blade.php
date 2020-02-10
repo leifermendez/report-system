@@ -10,16 +10,16 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/main.js') }}" defer></script>
+    <script src="{{ secure_asset('js/main.js') }}" defer></script>
     <script src="https://use.fontawesome.com/1f3c336efc.js"></script>
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-{{--    <link href="{{ asset('css/app.css') }}" rel="stylesheet">--}}
-    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/customs.css') }}" rel="stylesheet">
+{{--    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">--}}
+    <link href="{{ secure_asset('css/main.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/customs.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
