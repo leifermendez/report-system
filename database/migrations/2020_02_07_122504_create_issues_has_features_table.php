@@ -18,6 +18,7 @@ class CreateIssuesHasFeaturesTable extends Migration
             $table->integer('issue_id');
             $table->integer('featured_id');
             $table->float('hours');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

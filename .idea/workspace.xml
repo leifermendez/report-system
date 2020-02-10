@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="be83bd95-3b8f-4297-bd77-86b0b417c2c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_07_122504_create_issues_has_features_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_07_122504_create_issues_has_features_table.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +169,8 @@
       <workItem from="1581078563371" duration="17721000" />
       <workItem from="1581163079017" duration="5930000" />
       <workItem from="1581334298919" duration="677000" />
-      <workItem from="1581335043547" duration="2997000" />
+      <workItem from="1581335043547" duration="5407000" />
+      <workItem from="1581343147820" duration="523000" />
     </task>
     <servers />
   </component>
