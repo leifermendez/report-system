@@ -2,8 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be83bd95-3b8f-4297-bd77-86b0b417c2c2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/dist/daterangepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/dist/daterangepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/dist/jquery.daterangepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/gulpfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/src/daterangepicker.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/src/jquery.daterangepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/moment/moment.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/reports/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/view.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +44,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -124,22 +148,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ZIIM Abierto\PhpstormProjects\Mochileros\report-system\public\js" />
+      <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\resources\views" />
+      <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\public\css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\public" />
       <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\public\js" />
       <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\resources\css" />
       <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\resources\js" />
       <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\resources" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\resources\views" />
-      <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\public\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -169,7 +194,9 @@
       <workItem from="1581163079017" duration="5930000" />
       <workItem from="1581334298919" duration="677000" />
       <workItem from="1581335043547" duration="5407000" />
-      <workItem from="1581343147820" duration="1242000" />
+      <workItem from="1581343147820" duration="1972000" />
+      <workItem from="1581410054132" duration="4000" />
+      <workItem from="1581599335080" duration="1951000" />
     </task>
     <servers />
   </component>

@@ -6,15 +6,25 @@ use App\Features;
 use App\Organizations;
 use App\Projects;
 use App\Reports;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class ReportsController extends Controller
 {
     private $parent = 'reports';
 
-    public function index()
+    public function index(Request $request)
     {
-        $data = Reports::orderBy('id', 'desc')->with(['issues'])->get();
+        $data = Reports::orderBy('id', 'desc')
+            ->where(function ($q) use ($request) {
+                if (($request->date_begin) && ($request->date_finish)) {
+                    $begin = Carbon::parse($request->date_begin);
+                    $finish = Carbon::parse($request->date_finish);
+                    $q->whereDate('date_begin','>=', $begin)
+                        ->whereDate('date_finish','<=', $finish);
+                }
+            })
+            ->with(['issues'])->get();
 
         return view($this->parent . '.view')->with(['data' => $data]);
 

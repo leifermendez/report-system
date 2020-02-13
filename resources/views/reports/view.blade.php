@@ -23,7 +23,9 @@
                             </div>
                         </div>
                     </div>
-
+                    <div class="pl-4 pr-4 pb-2 pt-2">
+                        <input id="date-range0"  value="" class="form-control">
+                    </div>
                     <div class="card-body">
                         @foreach($data as $d)
                             <div class="card mb-3">
@@ -33,7 +35,7 @@
                                         {{Carbon\Carbon::parse($d->date_begin)->format('d M Y')}} /
                                         {{Carbon\Carbon::parse($d->date_finish)->format('d M Y')}} <i
                                             class="fas fa-angle-right"></i>
-                                         {{$d->project->title}}
+                                        {{$d->project->title}}
                                         <span class="font-italic">({{array_sum(array_column($d->issues->toArray(), 'hours'))}})</span>
                                     </div>
                                     <div class="d-flex">

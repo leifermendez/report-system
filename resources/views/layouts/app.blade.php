@@ -10,7 +10,11 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ secure_asset('js/main.js') }}" defer></script>
+    <script src="{{ asset('js/moment/moment.js') }}" defer></script>
+    <script src="{{ asset('js/jquery/jquery.js') }}" defer></script>
+    <script src="{{ asset('js/jquery-date-range-picker-master/dist/jquery.daterangepicker.min.js') }}" defer></script>
+    <script src="{{ asset('js/main.js') }}" defer></script>
+    <script src="{{ asset('js/custom.js') }}" defer></script>
     <script src="https://use.fontawesome.com/1f3c336efc.js"></script>
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -18,8 +22,9 @@
 
     <!-- Styles -->
 {{--    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">--}}
-    <link href="{{ secure_asset('css/main.css') }}" rel="stylesheet">
-    <link href="{{ secure_asset('css/customs.css') }}" rel="stylesheet">
+    <link href="{{ asset('js/jquery-date-range-picker-master/dist/daterangepicker.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/customs.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">

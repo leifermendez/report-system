@@ -1,0 +1,57 @@
+{
+  "name": "jquery-date-range-picker",
+  "description": "jQuery Date Range Picker is a jQuery plugin that allows user to select a date range.",
+  "version": "0.20.0",
+  "license": "MIT",
+  "main": "src/jquery.daterangepicker.js",
+  "keywords": [
+    "jquery",
+    "date",
+    "daterange",
+    "date",
+    "picker",
+    "range"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/longbill/jquery-date-range-picker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/longbill/jquery-date-range-picker/issues"
+  },
+  "homepage": "https://github.com/longbill/jquery-date-range-picker",
+  "maintainers": [],
+  "scripts": {
+    "dist": "gulp",
+    "dev": "gulp dev",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "gulp && git add -A dist",
+    "postversion": "git push && git push --tags"
+  },
+  "engines": {
+    "node": "0.12.x",
+    "npm": "~3.9.2"
+  },
+  "author": "longbill",
+  "contributors": [],
+  "dependencies": {
+    "jquery": ">=1.7",
+    "moment": ">=2.8.1",
+    "npm": "^5.8.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.5.0",
+    "gulp-header": "^1.8.8",
+    "gulp-jsbeautifier": "^2.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11"
+  },
+  "optionalDependencies": {}
+}

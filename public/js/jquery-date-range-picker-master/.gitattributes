@@ -1,0 +1,8 @@
+# Auto detect text files and perform LF normalization
+* text=auto eol=lf
+
+# Don't diff or textually merge source maps
+*.map   binary
+
+# Avoid unreadable diffs for generated text files, eg: *.min.js
+*.min.* binary
