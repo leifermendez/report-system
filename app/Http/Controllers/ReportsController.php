@@ -15,18 +15,27 @@ class ReportsController extends Controller
 
     public function index(Request $request)
     {
+        $general = array(
+            'hours' => 0
+        );
         $data = Reports::orderBy('id', 'desc')
             ->where(function ($q) use ($request) {
                 if (($request->date_begin) && ($request->date_finish)) {
                     $begin = Carbon::parse($request->date_begin);
                     $finish = Carbon::parse($request->date_finish);
-                    $q->whereDate('date_begin','>=', $begin)
-                        ->whereDate('date_finish','<=', $finish);
+                    $q->whereDate('date_begin', '>=', $begin)
+                        ->whereDate('date_finish', '<=', $finish);
                 }
             })
             ->with(['issues'])->get();
 
-        return view($this->parent . '.view')->with(['data' => $data]);
+        foreach ($data as $d) {
+            $hours_all = array_sum(array_column($d->issues->toArray(), 'hours'));
+            $general['hours'] += $hours_all;
+            $d->setAttribute('hours_all', $hours_all);
+        }
+
+        return view($this->parent . '.view')->with(['data' => $data, 'general' => $general]);
 
     }
 

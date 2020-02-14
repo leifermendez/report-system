@@ -2,33 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be83bd95-3b8f-4297-bd77-86b0b417c2c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/bower.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/dist/daterangepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/dist/daterangepicker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/dist/jquery.daterangepicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/gulpfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/src/daterangepicker.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/src/jquery.daterangepicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-date-range-picker-master/yarn.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/moment/moment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ReportApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ReportApp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/reports/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/view.blade.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -167,15 +145,15 @@
       <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\resources" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -197,6 +175,7 @@
       <workItem from="1581343147820" duration="1972000" />
       <workItem from="1581410054132" duration="4000" />
       <workItem from="1581599335080" duration="1951000" />
+      <workItem from="1581712353950" duration="612000" />
     </task>
     <servers />
   </component>
@@ -237,6 +216,10 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="413" y="287" width="606" height="536" key="find.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1581091254500" />
+    <state x="664" y="347" key="git4idea.merge.GitPullDialog" timestamp="1581706414206">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="664" y="347" key="git4idea.merge.GitPullDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1581706414206" />
     <state x="372" y="260" key="run.anything.popup" timestamp="1581082992186">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
