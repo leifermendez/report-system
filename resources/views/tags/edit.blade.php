@@ -28,6 +28,16 @@
                                        class="form-control">
                             </div>
                             <div class="position-relative form-group">
+                                <label for="projectTags" class="">Proyectos</label>
+                                <select name="project_id" id="projectTags" class="form-control">
+                                    @foreach($projects as $project)
+                                        <option
+                                            {{(($data->projects) && ($data->projects->id === $project->id)) ? 'selected' : ''}}
+                                            value="{{$project->id}}">{{$project->title}}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="position-relative form-group">
                                 <label for="startAtTags" class="">Inicio</label>
                                 <input name="start_at" id="startAtTags"
                                        placeholder=""

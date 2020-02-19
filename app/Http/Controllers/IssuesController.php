@@ -7,6 +7,7 @@ use App\Issues;
 use App\IssuesHasFeatures;
 use App\Organizations;
 use App\Reports;
+use App\Tags;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -36,9 +37,11 @@ class IssuesController extends Controller
         $report = Reports::where('id', $id_report)->with(['project'])->first();
         $features = Features::orderBy('name', 'ASC')->get();
         $developers = User::orderBy('name', 'ASC')->get();
+        $tags = Tags::orderBy('name', 'ASC')->where('project_id', $report->project->id)->get();
 
         return view($this->parent . '.create')->with([
-            'features' => $features, 'report' => $report, 'developers' => $developers
+            'features' => $features, 'report' => $report, 'developers' => $developers,
+            'tags' => $tags
         ]);
     }
 
@@ -59,11 +62,13 @@ class IssuesController extends Controller
                 'projects_id' => 'required',
                 'features' => 'required',
                 'hours_list' => 'required',
-                'report_id' => 'required'
+                'report_id' => 'required',
+                'tag_id' => 'required'
             ]);
 
             $features = [];
 
+            $report = Reports::find($request->report_id);
 
             $data_issue = array(
                 'title' => $request->title,
@@ -71,9 +76,17 @@ class IssuesController extends Controller
                 'users_id' => $request->users_id,
                 'projects_id' => $request->projects_id,
                 'observations' => $request->observations,
-                'tag_id' => 1,
+                'tag_id' => $request->tag_id,
                 'report_id' => $request->report_id
             );
+
+            $data_issue = array_merge($data_issue, [
+                'start' => $report->date_begin,
+                'end' => $report->date_finish,
+            ]);
+
+
+
 
             $data = Issues::create($data_issue);
 

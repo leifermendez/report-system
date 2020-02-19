@@ -77,43 +77,35 @@ class ChartController extends Controller
             ->with(['series'])
             ->get()->toArray();
 
-        $clear_series = [];
+        dd($data);
+
 
         foreach ($data as $datum) {
+            $clear_series = [];
+            foreach ($datum['series'] as $v) {
 
-            if (isset($datum['series'][0])) {
-                foreach ($datum['series'] as $v) {
-                    $clear_series[] = array_merge($v,
-                        ['color' => $v['get_tag']['color'],
-                            'title' => '(Live) ' . $v['get_tag']['name']]);
-                    $clear_series[] = [
-                        'title' => '(Estimated) ' . $v['get_tag']['name'],
-                        'start' => $v['get_tag']['start_at'],
-                        'end' => $v['get_tag']['deadline_at']
-                    ];
-//                    $d[] = [
-//                        'title' => 'TIEMPO',
-//                        'start' => Carbon::now()->toDateString(),
-//                        'end' => $datum['series'][0]['get_tag']['deadline_at']
-//                    ];
-                }
-
-                $dataRaw[] = array(
-                    'id' => $datum['id'],
-                    'name' => $datum['title'],
-                    'series' => $clear_series
-//                'series' => $this->parseIssue($datum->series, [
-//                    'title' => 'ESTE',
-//                    'date_begin' => $datum->date_begin,
-//                    'date_finish' => $datum->date_finish
-//                ])
-                );
-
+                $clear_series[] = array_merge($v,
+                    [
+                        'color' => $v['get_tag']['color'],
+                        'title' => '(L) ' . $v['get_tag']['name']
+                    ]);
+//                $clear_series[] = [
+//                    'title' => '(E) ' . $v['get_tag']['name'],
+//                    'start' => $v['get_tag']['start_at'],
+//                    'end' => $v['get_tag']['deadline_at']
+//                ];
 
             }
 
+            $dataRaw[] = array(
+                'id' => $datum['id'],
+                'name' => $datum['title'],
+                'series' => $clear_series
+            );
+
         }
 
+        dd($dataRaw);
 
         return view($this->parent . '.view')->with(['data' => $dataRaw]);
     }

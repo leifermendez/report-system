@@ -43,6 +43,14 @@
                                 </table>
                             </div>
                             <div class="position-relative form-group">
+                                <label for="tagIssues" class="">Etiqueta</label>
+                                <select name="tag_id" id="tagIssues" class="form-control">
+                                    @foreach($tags as $tag)
+                                        <option value="{{$tag->id}}">{{$tag->name}}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="position-relative form-group">
                                 <label for="developerIssues" class="">Developer</label>
                                 <select name="users_id" id="developerIssues" class="form-control">
                                     @foreach($developers as $developer)

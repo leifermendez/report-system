@@ -2,25 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be83bd95-3b8f-4297-bd77-86b0b417c2c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/tags/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/tags/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/tags/view.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ChartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ChartController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IssuesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IssuesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Issues.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Issues.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Projects.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Reports.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Reports.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Tags.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Tags.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_07_101714_create_issues_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_07_101714_create_issues_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_19_151252_create_tags_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_19_151252_create_tags_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/customs.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/customs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/issues/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/issues/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/reports/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/view.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/tags/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tags/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/tags/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tags/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/tags/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tags/view.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

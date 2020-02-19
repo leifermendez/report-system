@@ -50,11 +50,6 @@
                                            data-original-title="Editar">
                                             <i class="fas fa-edit"></i>
                                         </a>
-                                        <a href="/issues/create?report={{$d->id}}" class="btn btn-sm"
-                                           data-toggle="tooltip" title=""
-                                           data-original-title="Issues">
-                                            <i class="fas fa-list"></i>
-                                        </a>
                                         <form method="POST" action="/reports/{{$d->id}}">
                                             {{ csrf_field() }}
                                             {{ method_field('DELETE') }}
@@ -62,6 +57,12 @@
                                                 <i class="fas fa-trash-alt"></i>
                                             </button>
                                         </form>
+                                        <a href="/issues/create?report={{$d->id}}"
+                                           class="btn btn-sm text-success"
+                                           data-toggle="tooltip" title=""
+                                           data-original-title="Issues">
+                                            <i class="fas fa-plus-square"></i>
+                                        </a>
 
                                     </div>
                                 </div>

@@ -3,12 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Organizations;
+use App\Projects;
 use App\Tags;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Http\Request;
 
 
 class TagController extends Controller
 {
+    use SoftDeletes;
     private $parent = 'tags';
 
     /**
@@ -18,7 +21,8 @@ class TagController extends Controller
      */
     public function index()
     {
-        $data = Tags::orderBy('id', 'desc')->get();
+        $data = Tags::orderBy('id', 'desc')->with(['projects'])
+            ->get();
 
         return view($this->parent . '.view')->with(['data' => $data]);
     }
@@ -30,7 +34,8 @@ class TagController extends Controller
      */
     public function create()
     {
-        return view($this->parent . '.create');
+        $projects = Projects::orderBy('id', 'DESC')->get();
+        return view($this->parent . '.create')->with(['projects' => $projects]);
     }
 
     /**
@@ -46,6 +51,7 @@ class TagController extends Controller
             'color' => 'required',
             'start_at' => 'required',
             'deadline_at' => 'required',
+            'project_id' => 'required'
         ]);
 
         Tags::create($validatedData);
@@ -67,12 +73,15 @@ class TagController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param int $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function edit($id)
     {
-        $data = Tags::find($id);
-        return view($this->parent . '.edit')->with(['data' => $data]);
+        $projects = Projects::orderBy('id', 'DESC')->get();
+        $data = Tags::with(['projects'])->find($id);
+
+        return view($this->parent . '.edit')->with(['data' => $data,
+            'projects' => $projects]);
     }
 
     /**
@@ -89,6 +98,7 @@ class TagController extends Controller
             'color' => 'required',
             'start_at' => 'required',
             'deadline_at' => 'required',
+            'project_id' => 'required'
         ]);
 
         Tags::where('id', $id)

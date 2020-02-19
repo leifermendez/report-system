@@ -31,6 +31,7 @@
                                 <th>#</th>
                                 <th>Nombre</th>
                                 <th>Color</th>
+                                <th>Proyecto</th>
                                 <th>Inicio</th>
                                 <th>Finalización</th>
                                 <th></th>
@@ -42,6 +43,7 @@
                                     <th scope="row">{{$d->id}}</th>
                                     <td>{{$d->name}}</td>
                                     <td>{{$d->color}}</td>
+                                    <td>{{($d->projects) ? $d->projects->title : 'N/A'}}</td>
                                     <td>{{$d->start_at}}</td>
                                     <td>{{$d->deadline_at}}</td>
                                     <td>
