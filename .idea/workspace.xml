@@ -2,22 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be83bd95-3b8f-4297-bd77-86b0b417c2c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.ganttView-master/lib/jquery-ui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.ganttView-master/lib/jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/chart/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/chart/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/chart/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/chart/view.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/tags/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/tags/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/tags/view.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ChartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ChartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IssuesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IssuesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Issues.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Issues.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Projects.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Reports.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Reports.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Tags.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Tags.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_07_101714_create_issues_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_07_101714_create_issues_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_19_151252_create_tags_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_19_151252_create_tags_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/customs.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/customs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/custom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/issues/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/issues/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/reports/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/view.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -181,6 +182,15 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
       <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
       <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/mpociot/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/mpociot/laravel-apidoc-generator" />
+      <path value="$PROJECT_DIR$/vendor/mpociot/documentarian" />
+      <path value="$PROJECT_DIR$/vendor/windwalker/structure" />
+      <path value="$PROJECT_DIR$/vendor/windwalker/renderer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/mnapoli/silly" />
+      <path value="$PROJECT_DIR$/vendor/mnapoli/front-yaml" />
+      <path value="$PROJECT_DIR$/vendor/php-di/invoker" />
     </include_path>
   </component>
   <component name="ProjectId" id="1XTSzYImk2LQKA3wrdd3UN8ae9E" />
@@ -195,12 +205,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/js/jquery.ganttView-master/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\resources\views" />
+      <recent name="C:\Users\ZIIM Abierto\PhpstormProjects\Mochileros\report-system\public\js\jquery.ganttView-master\lib" />
+      <recent name="C:\Users\ZIIM Abierto\PhpstormProjects\Mochileros\report-system\resources\views" />
+      <recent name="C:\Users\ZIIM Abierto\PhpstormProjects\Mochileros\report-system\public\js" />
+      <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\public\css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\public" />
       <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\public\js" />
@@ -208,23 +225,16 @@
       <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\resources\js" />
       <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\resources" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ZIIM Abierto\PhpstormProjects\Mochileros\report-system\public\js\jquery.ganttView-master\lib" />
-      <recent name="C:\Users\ZIIM Abierto\PhpstormProjects\Mochileros\report-system\resources\views" />
-      <recent name="C:\Users\ZIIM Abierto\PhpstormProjects\Mochileros\report-system\public\js" />
-      <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\resources\views" />
-      <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\public\css" />
-    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -267,10 +277,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="439" y="314" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581082626403">
+    <state x="439" y="314" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582135391197">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="439" y="314" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1581082626403" />
+    <state x="439" y="314" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1582135391197" />
     <state x="718" y="418" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1581069171746">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
@@ -287,10 +297,10 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="413" y="287" width="606" height="536" key="find.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1581091254500" />
-    <state x="664" y="347" key="git4idea.merge.GitPullDialog" timestamp="1581706414206">
+    <state x="664" y="347" key="git4idea.merge.GitPullDialog" timestamp="1582130473639">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="664" y="347" key="git4idea.merge.GitPullDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1581706414206" />
+    <state x="664" y="347" key="git4idea.merge.GitPullDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1582130473639" />
     <state x="372" y="260" key="run.anything.popup" timestamp="1581082992186">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
@@ -299,16 +309,5 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1581172868675" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/Http/Controllers/ChartController.php</url>
-          <line>76</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

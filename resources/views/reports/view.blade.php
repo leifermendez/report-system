@@ -24,7 +24,8 @@
                         </div>
                     </div>
                     <div class="pl-4 pr-4 pb-2 pt-2">
-                        <input id="date-range0" value="" placeholder="Rango de fechas" class="form-control form-date-input">
+                        <input id="date-range0" value="" placeholder="Rango de fechas"
+                               class="form-control form-date-input">
                     </div>
                     <div class="card-body">
                         @foreach($data as $d)
@@ -69,8 +70,11 @@
                                         <ul class="m-0 p-0">
                                             @foreach($d->issues as $i)
                                                 <li data-toggle="tooltip"
-                                                    data-original-title="{{$i->hours}} horas"
-                                                    class="badge badge-light-gray mb-1">{{$i->title}}</li>
+                                                    data-original-title="Tag: {{$i->get_tag->name}} - {{$i->hours}} horas"
+                                                    class="badge badge-light-gray mb-1">
+                                                    <canvas class="pointer-color"
+                                                            style="background-color: {{$i->get_tag->color}}"></canvas>
+                                                    {{$i->title}}</li>
                                             @endforeach
 
                                         </ul>

@@ -17,6 +17,8 @@ class CreateTagsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('color')->default('#eaeaea');
+            $table->timestamp('start_at');
+            $table->timestamp('deadline_at');
             $table->timestamps();
         });
     }

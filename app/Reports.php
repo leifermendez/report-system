@@ -19,7 +19,7 @@ class Reports extends Model
     public function issues()
     {
         return $this->hasMany('App\Issues', 'report_id', 'id')
-            ->with(['issue_features']);
+            ->with(['issue_features','get_tag']);
     }
 
     public function series()

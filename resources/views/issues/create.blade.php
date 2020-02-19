@@ -11,6 +11,7 @@
                         <form class="" method="POST" action="{{ url('issues') }}">
                             {{ csrf_field() }}
                             <input type="hidden" name="projects_id" value="{{$report->project->id}}">
+                            <input type="hidden" name="report_id" value="{{$report->id}}">
                             <div class="position-relative form-group">
                                 <label for="titleProjects" class="">Titulo</label>
                                 <input name="title" id="titleProjects"

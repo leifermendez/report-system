@@ -53,13 +53,13 @@ class IssuesController extends Controller
 
         try {
             DB::beginTransaction();
-
-            $validatedData = $request->validate([
+            $request->validate([
                 'title' => 'required',
                 'users_id' => 'required',
                 'projects_id' => 'required',
                 'features' => 'required',
                 'hours_list' => 'required',
+                'report_id' => 'required'
             ]);
 
             $features = [];
@@ -70,7 +70,9 @@ class IssuesController extends Controller
                 'hours' => array_sum($request->hours_list),
                 'users_id' => $request->users_id,
                 'projects_id' => $request->projects_id,
-                'observations' => $request->observations
+                'observations' => $request->observations,
+                'tag_id' => 1,
+                'report_id' => $request->report_id
             );
 
             $data = Issues::create($data_issue);

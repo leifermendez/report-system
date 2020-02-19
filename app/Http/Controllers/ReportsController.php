@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Features;
-use App\Organizations;
 use App\Projects;
 use App\Reports;
 use Carbon\Carbon;
@@ -34,7 +32,6 @@ class ReportsController extends Controller
             $general['hours'] += $hours_all;
             $d->setAttribute('hours_all', $hours_all);
         }
-
 
         return view($this->parent . '.view')->with(['data' => $data, 'general' => $general]);
 

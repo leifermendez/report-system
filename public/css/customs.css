@@ -70,6 +70,7 @@ input[type=checkbox]:checked:disabled + label:before {
     border: 1px solid #ffffff;
     box-shadow: inset 0px 0px 5px rgba(107, 102, 102, 0.25) !important;
 }
+
 div.ganttview-vtheader-series-name {
     font-size: .7rem !important;
     width: 200px !important;
@@ -78,20 +79,31 @@ div.ganttview-vtheader-series-name {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 div.ganttview-vtheader {
     width: 300px !important;
 }
+
 div.ganttview {
     border: 1px solid #f1f1f1 !important;
 }
+
 div.ganttview-slide-container {
     border-left: 1px solid #dcdcdc !important;
 }
-div.ganttview-vtheader-item-name{
+
+div.ganttview-vtheader-item-name {
     border-top: 1px solid #e2e2e2 !important;
 
     line-height: 40px;
     font-size: 12px;
     font-weight: 600;
 
+}
+
+.pointer-color {
+    background-color: gainsboro;
+    width: 10px;
+    height: 10px;
+    border-radius: .50rem;
 }
