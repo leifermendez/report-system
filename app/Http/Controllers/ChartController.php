@@ -77,7 +77,7 @@ class ChartController extends Controller
             ->with(['series'])
             ->get()->toArray();
 
-        dd($data);
+
 
 
         foreach ($data as $datum) {
@@ -89,11 +89,11 @@ class ChartController extends Controller
                         'color' => $v['get_tag']['color'],
                         'title' => '(L) ' . $v['get_tag']['name']
                     ]);
-//                $clear_series[] = [
-//                    'title' => '(E) ' . $v['get_tag']['name'],
-//                    'start' => $v['get_tag']['start_at'],
-//                    'end' => $v['get_tag']['deadline_at']
-//                ];
+                $clear_series[] = [
+                    'title' => '(E) ' . $v['get_tag']['name'],
+                    'start' => $v['get_tag']['start_at'],
+                   'end' => $v['get_tag']['deadline_at']
+               ];
 
             }
 
@@ -105,7 +105,7 @@ class ChartController extends Controller
 
         }
 
-        dd($dataRaw);
+
 
         return view($this->parent . '.view')->with(['data' => $dataRaw]);
     }

@@ -20,10 +20,10 @@ class Projects extends Model
     {
         return $this->hasMany('App\Issues', 'projects_id', 'id')
             ->with(['get_tag'])
-            ->orderBy('id', 'DESC')
+            ->orderBy('issues.id', 'ASC')
             ->select('*',
                 DB::raw('count(*) as total_issues'),
-                DB::raw('issues.start as last_at')
+                DB::raw('MAX(issues.end) as end')
             )
             ->groupBy(['issues.tag_id']);
     }

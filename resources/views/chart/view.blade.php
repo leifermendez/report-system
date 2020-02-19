@@ -36,7 +36,8 @@
                     onDrag: function (data) {
                         var msg = "You dragged an event: { start: " + data.start.toString("M/d/yyyy") + ", end: " + data.end.toString("M/d/yyyy") + " }";
                         jQuery("#eventMessage").text(msg);
-                    }
+                    },
+                    draggable:false
                 }
             });
 
