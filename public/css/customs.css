@@ -45,21 +45,53 @@ input[type=checkbox]:checked:disabled + label:before {
     border-color: #bfb;
 }
 
-.line-height-report{
+.line-height-report {
     line-height: 1.7rem;
 }
 
-.over-block-card:hover{
+.over-block-card:hover {
     transform: scale(1.1);
     z-index: 9;
 }
-.report-text-block{
+
+.report-text-block {
     font-size: .9rem;
 }
-.badge-light-gray{
+
+.badge-light-gray {
     color: #585858;
     background-color: #e2e2e2;
     letter-spacing: 0.5px;
     font-weight: 500;
     text-transform: initial;
+}
+
+.form-date-input {
+    border: 1px solid #ffffff;
+    box-shadow: inset 0px 0px 5px rgba(107, 102, 102, 0.25) !important;
+}
+div.ganttview-vtheader-series-name {
+    font-size: .7rem !important;
+    width: 200px !important;
+    border-top: 1px solid #e2e2e2 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+div.ganttview-vtheader {
+    width: 300px !important;
+}
+div.ganttview {
+    border: 1px solid #f1f1f1 !important;
+}
+div.ganttview-slide-container {
+    border-left: 1px solid #dcdcdc !important;
+}
+div.ganttview-vtheader-item-name{
+    border-top: 1px solid #e2e2e2 !important;
+
+    line-height: 40px;
+    font-size: 12px;
+    font-weight: 600;
+
 }

@@ -35,6 +35,7 @@ class ReportsController extends Controller
             $d->setAttribute('hours_all', $hours_all);
         }
 
+
         return view($this->parent . '.view')->with(['data' => $data, 'general' => $general]);
 
     }
@@ -60,7 +61,7 @@ class ReportsController extends Controller
      */
     public function store(Request $request)
     {
-        $validatedData = $request->validate([
+        $request->validate([
             'date_begin' => 'required',
             'date_finish' => 'required',
             'project_with_organization' => 'required'

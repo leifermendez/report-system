@@ -24,7 +24,7 @@
                         </div>
                     </div>
                     <div class="pl-4 pr-4 pb-2 pt-2">
-                        <input id="date-range0" value="" class="form-control">
+                        <input id="date-range0" value="" placeholder="Rango de fechas" class="form-control form-date-input">
                     </div>
                     <div class="card-body">
                         @foreach($data as $d)

@@ -18,7 +18,11 @@ class CreateIssuesTable extends Migration
             $table->string('title');
             $table->float('hours');
             $table->integer('users_id'); //developer
+            $table->integer('report_id'); //developer
             $table->integer('projects_id'); //project
+            $table->integer('tag_id'); //project
+            $table->timestamp('start'); //project
+            $table->timestamp('end'); //project
             $table->longText('observations')->nullable();
             $table->softDeletes();
             $table->timestamps();

@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Reports extends Model
 {
     use SoftDeletes;
-    protected $fillable = ['path', 'organizations_id', 'projects_id','date_begin','date_finish'];
+    protected $fillable = ['path', 'organizations_id', 'projects_id', 'date_begin', 'date_finish'];
 
     public function project()
     {
@@ -18,7 +18,18 @@ class Reports extends Model
 
     public function issues()
     {
-        return $this->hasMany('App\Issues', 'projects_id', 'projects_id')
+        return $this->hasMany('App\Issues', 'report_id', 'id')
             ->with(['issue_features']);
+    }
+
+    public function series()
+    {
+        return $this->hasMany('App\Issues', 'report_id', 'id')
+            ->with(['issue_features']);
+    }
+
+    public function get_issue_tag()
+    {
+        return $this->hasMany('App\Tags', 'id', 'tag_id');
     }
 }

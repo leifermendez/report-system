@@ -24,6 +24,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('/features', 'FeaturesController');
     Route::resource('/reports', 'ReportsController');
     Route::resource('/issues', 'IssuesController');
+    Route::resource('/chart', 'ChartController');
 });
 
 

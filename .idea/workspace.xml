@@ -2,10 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be83bd95-3b8f-4297-bd77-86b0b417c2c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ReportApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ReportApp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.ganttView-master/lib/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.ganttView-master/lib/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/chart/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/chart/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/chart/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/chart/view.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Reports.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Reports.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_07_101714_create_issues_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_07_101714_create_issues_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/customs.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/customs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/reports/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +31,60 @@
     <execution>
       <executable path="composer" />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Reports" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Reports" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Reports" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="d354vu9h1hcapg: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Reports" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="d354vu9h1hcapg: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Reports" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="d354vu9h1hcapg: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Reports" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="d354vu9h1hcapg: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -123,20 +191,16 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/js/jquery.ganttView-master/lib" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ZIIM Abierto\PhpstormProjects\Mochileros\report-system\public\js" />
-      <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\resources\views" />
-      <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\public\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\public" />
       <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\public\js" />
@@ -144,16 +208,23 @@
       <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\resources\js" />
       <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\resources" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ZIIM Abierto\PhpstormProjects\Mochileros\report-system\public\js\jquery.ganttView-master\lib" />
+      <recent name="C:\Users\ZIIM Abierto\PhpstormProjects\Mochileros\report-system\resources\views" />
+      <recent name="C:\Users\ZIIM Abierto\PhpstormProjects\Mochileros\report-system\public\js" />
+      <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\resources\views" />
+      <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\public\css" />
+    </key>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
+  <component name="RunDashboard">
+    <option name="ruleStates">
       <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
       </list>
     </option>
   </component>
@@ -228,5 +299,16 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1581172868675" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/ChartController.php</url>
+          <line>76</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

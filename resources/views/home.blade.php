@@ -33,6 +33,12 @@
                                     <div class="mt-2">Caracteristicas</div>
                                 </a>
                             </div>
+                            <div class="col-2 over-block-card card p-3 mr-2 text-center">
+                                <a class="btn btn-default" href="chart">
+                                    <i class="fas fa-list-ul fa-3x"></i>
+                                    <div class="mt-2">Diagrama</div>
+                                </a>
+                            </div>
 
                         </div>
                     </div>
