@@ -17,27 +17,17 @@
             return data;
         }
 
-
         const innerWidth = document.querySelector('#viewport-chart #ganttChart');
-        console.log(@json($data))
         document.addEventListener("DOMContentLoaded", function (event) {
             jQuery("#ganttChart").ganttView({
                 data: @json($data),
                 slideWidth: '100%',
                 behavior: {
                     onClick: function (data) {
-                        var msg = "You clicked on an event: { start: " + data.start.toString("M/d/yyyy") + ", end: " + data.end.toString("M/d/yyyy") + " }";
-                        jQuery("#eventMessage").text(msg);
+                        window.open(`/reports/2`)
                     },
-                    onResize: function (data) {
-                        var msg = "You resized an event: { start: " + data.start.toString("M/d/yyyy") + ", end: " + data.end.toString("M/d/yyyy") + " }";
-                        jQuery("#eventMessage").text(msg);
-                    },
-                    onDrag: function (data) {
-                        var msg = "You dragged an event: { start: " + data.start.toString("M/d/yyyy") + ", end: " + data.end.toString("M/d/yyyy") + " }";
-                        jQuery("#eventMessage").text(msg);
-                    },
-                    draggable:false
+                    draggable: false,
+                    resizable: false
                 }
             });
 

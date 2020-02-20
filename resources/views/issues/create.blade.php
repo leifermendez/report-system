@@ -20,6 +20,14 @@
                                        class="form-control">
                             </div>
                             <div class="position-relative form-group">
+                                <label for="tagIssues" class="">Etiqueta</label>
+                                <select name="tag_id" id="tagIssues" class="form-control">
+                                    @foreach($tags as $tag)
+                                        <option value="{{$tag->id}}">{{$tag->name}}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="position-relative form-group">
                                 <table class="mb-0 table">
                                     <thead>
                                     </thead>
@@ -41,14 +49,6 @@
                                     @endforeach
                                     </tbody>
                                 </table>
-                            </div>
-                            <div class="position-relative form-group">
-                                <label for="tagIssues" class="">Etiqueta</label>
-                                <select name="tag_id" id="tagIssues" class="form-control">
-                                    @foreach($tags as $tag)
-                                        <option value="{{$tag->id}}">{{$tag->name}}</option>
-                                    @endforeach
-                                </select>
                             </div>
                             <div class="position-relative form-group">
                                 <label for="developerIssues" class="">Developer</label>

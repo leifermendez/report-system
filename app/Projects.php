@@ -25,6 +25,6 @@ class Projects extends Model
                 DB::raw('count(*) as total_issues'),
                 DB::raw('MAX(issues.end) as end')
             )
-            ->groupBy(['issues.tag_id']);
+            ->groupBy(['issues.tag_id','issues.id']);
     }
 }

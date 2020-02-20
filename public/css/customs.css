@@ -78,8 +78,11 @@ div.ganttview-vtheader-series-name {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    /*height: 40px !important;*/
 }
-
+div.ganttview-block-container{
+    /*height: 40px !important;*/
+}
 div.ganttview-vtheader {
     width: 300px !important;
 }
@@ -106,4 +109,8 @@ div.ganttview-vtheader-item-name {
     width: 10px;
     height: 10px;
     border-radius: .50rem;
+}
+
+div.ganttview-block{
+    border-radius: 40px !important;
 }
