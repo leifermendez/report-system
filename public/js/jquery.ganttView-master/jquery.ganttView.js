@@ -119,9 +119,9 @@ behavior: {
             applyLastClass(div.parent());
         }
 
-        const date_now = Date.now()
+        const date_now = new Date();
         var now = {
-            day: date_now.getDay(),
+            day: date_now.getDate(),
             month: date_now.getMonth(),
             year: date_now.getFullYear(),
         };
