@@ -70,11 +70,13 @@ input[type=checkbox]:checked:disabled + label:before {
     border: 1px solid #ffffff;
     box-shadow: inset 0px 0px 5px rgba(107, 102, 102, 0.25) !important;
 }
-
+.ganttview-vtheader-item .ganttview-vtheader-series-name:first-child {
+    border-top: solid 1px #e2e2e2 !important;
+}
 div.ganttview-vtheader-series-name {
     font-size: .7rem !important;
-    width: 200px !important;
-    border-top: 1px solid #e2e2e2 !important;
+    width: 199px !important;
+    border-top: 1px solid #ffffff !important;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
