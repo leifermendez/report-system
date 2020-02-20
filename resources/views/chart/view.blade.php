@@ -17,7 +17,15 @@
             return data;
         }
 
-        const innerWidth = document.querySelector('#viewport-chart #ganttChart');
+        const innerWidth = document.querySelector('#viewport-chart .ganttview-slide-container');
+
+        let pointerNow = document.querySelector('#viewport-chart .current_day').style;
+        style.setProperty('--width_all', `${parseFloat(innerWidth - 20)}px`);
+
+
+
+
+
         document.addEventListener("DOMContentLoaded", function (event) {
             console.log(@json($data))
             jQuery("#ganttChart").ganttView({

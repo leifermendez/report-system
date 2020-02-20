@@ -70,9 +70,11 @@ input[type=checkbox]:checked:disabled + label:before {
     border: 1px solid #ffffff;
     box-shadow: inset 0px 0px 5px rgba(107, 102, 102, 0.25) !important;
 }
+
 .ganttview-vtheader-item .ganttview-vtheader-series-name:first-child {
     border-top: solid 1px #e2e2e2 !important;
 }
+
 div.ganttview-vtheader-series-name {
     font-size: .7rem !important;
     width: 199px !important;
@@ -90,11 +92,13 @@ div.ganttview-block-container {
     height: 40px !important;
     padding: .45rem 0 0 0 !important;
 }
-div.ganttview-hzheader-day{
+
+div.ganttview-hzheader-day {
     width: 21px !important;
     font-size: .65rem !important;
     font-weight: 600 !important;
 }
+
 div.ganttview-vtheader {
     width: 300px !important;
 }
@@ -149,6 +153,16 @@ div.ganttview-block:hover {
     transition: all .2s ease-out;
     box-shadow: 0 2px 5px rgba(33, 150, 243, 0.6) !important;
 }
+
 .ganttview-vtheader-series .ganttview-vtheader-series-name:nth-child(2n) {
     border-left: solid 1px #e6e6e6;
+}
+
+.current_day:before {
+    content: "";
+    position: absolute;
+    background: rgba(255, 0, 0, 0.22);
+    height: var(--width_all);
+    z-index: 9;
+    width: 10px;
 }
