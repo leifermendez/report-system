@@ -42,7 +42,10 @@
                                 <tr>
                                     <th scope="row">{{$d->id}}</th>
                                     <td>{{$d->name}}</td>
-                                    <td>{{$d->color}}</td>
+                                    <td>
+                                        <span class="badge badge-info"
+                                              style="background-color: {{$d->color}}">{{$d->color}}</span>
+                                    </td>
                                     <td>{{($d->projects) ? $d->projects->title : 'N/A'}}</td>
                                     <td>{{$d->start_at}}</td>
                                     <td>{{$d->deadline_at}}</td>
