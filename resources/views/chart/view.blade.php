@@ -31,7 +31,7 @@
                     draggable: false,
                     resizable: false
                 }
-            });
+            }).then(r=>console.log('----',r))
 
             const innerWidth = document.querySelector('#viewport-chart .ganttview-slide-container');
             const pointer = document.querySelector('#viewport-chart .current_day').style;

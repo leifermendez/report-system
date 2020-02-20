@@ -26,16 +26,20 @@ behavior: {
 (function (jQuery) {
 
     jQuery.fn.ganttView = function () {
+        return new Promise((resolve) => {
+            var args = Array.prototype.slice.call(arguments);
 
-        var args = Array.prototype.slice.call(arguments);
+            if (args.length == 1 && typeof (args[0]) == "object") {
+                build.call(this, args[0]);
+                resolve('rendered')
+            }
 
-        if (args.length == 1 && typeof (args[0]) == "object") {
-            build.call(this, args[0]);
-        }
+            if (args.length == 2 && typeof (args[0]) == "string") {
+                handleMethod.call(this, args[0], args[1]);
+                resolve('rendered')
+            }
+        })
 
-        if (args.length == 2 && typeof (args[0]) == "string") {
-            handleMethod.call(this, args[0], args[1]);
-        }
     };
 
     function build(options) {
