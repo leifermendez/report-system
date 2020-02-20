@@ -119,7 +119,7 @@ behavior: {
             applyLastClass(div.parent());
         }
 
-        const date_now = new Date();
+        const date_now = Date.now()
         var now = {
             day: date_now.getDay(),
             month: date_now.getMonth(),
