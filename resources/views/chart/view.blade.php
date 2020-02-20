@@ -32,11 +32,9 @@
                     resizable: false
                 }
             }).then(r => {
-                const innerWidth = document.querySelector('#viewport-chart .ganttview-slide-container');
+                const parentDiv = document.querySelector('#viewport-chart .ganttview-slide-container');
                 const pointer = document.querySelector('#viewport-chart .current_day').style;
-                console.log('----',pointer)
-                console.log('----',innerWidth)
-                pointer.setProperty('--width_all', `${parseFloat(innerWidth - 20)}px`);
+                pointer.setProperty('--width_all', `${parseFloat(parentDiv.offsetHeight - 20)}px`);
             })
 
 
