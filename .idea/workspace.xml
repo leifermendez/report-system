@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be83bd95-3b8f-4297-bd77-86b0b417c2c2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ChartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ChartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IssuesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IssuesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Projects.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Tags.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Tags.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_19_151252_create_tags_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_19_151252_create_tags_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/customs.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/customs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/chart/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/chart/view.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/tags/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tags/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/tags/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tags/edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,29 +32,29 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Reports" type="feb32156:DbDataSourceImpl" />
+        <item name="Reportes" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Reports" type="feb32156:DbDataSourceImpl" />
+        <item name="Reportes" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Reports" type="feb32156:DbDataSourceImpl" />
+        <item name="Reportes" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="d354vu9h1hcapg: database" type="162271b6:PgImplModel$Database" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Reports" type="feb32156:DbDataSourceImpl" />
+        <item name="Reportes" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="d354vu9h1hcapg: database" type="162271b6:PgImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Reports" type="feb32156:DbDataSourceImpl" />
+        <item name="Reportes" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="d354vu9h1hcapg: database" type="162271b6:PgImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
@@ -69,7 +62,7 @@
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Reports" type="feb32156:DbDataSourceImpl" />
+        <item name="Reportes" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="d354vu9h1hcapg: database" type="162271b6:PgImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
@@ -218,15 +211,35 @@
       <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\public\css" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:Reportes" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:Reportes" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@34582fbc" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:Reportes" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@213b9d63" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:Reportes" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@592064dc" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -249,6 +262,8 @@
       <workItem from="1581410054132" duration="4000" />
       <workItem from="1581599335080" duration="1951000" />
       <workItem from="1581712353950" duration="612000" />
+      <workItem from="1582213185512" duration="920000" />
+      <workItem from="1582214181164" duration="70000" />
     </task>
     <servers />
   </component>
@@ -269,6 +284,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="43" y="205" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582213351023">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="43" y="205" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1582213351023" />
     <state x="439" y="314" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582135391197">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
@@ -281,6 +300,26 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="489" y="314" key="FileChooserDialogImpl/0.30.1920.1050@0.30.1920.1050" timestamp="1581072613250" />
+    <state width="1293" height="285" key="GridCell.Tab.0.bottom" timestamp="1582214252308">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="1293" height="285" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1582214252308" />
+    <state width="1293" height="285" key="GridCell.Tab.0.center" timestamp="1582214252308">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="1293" height="285" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1582214252308" />
+    <state width="1293" height="285" key="GridCell.Tab.0.left" timestamp="1582214252308">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="1293" height="285" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1582214252308" />
+    <state width="1293" height="285" key="GridCell.Tab.0.right" timestamp="1582214252308">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="1293" height="285" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1582214252308" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1582213285290">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.30.1920.1050@0.30.1920.1050" timestamp="1582213285290" />
     <state x="544" y="483" key="NewPhpFileDialog" timestamp="1581089918250">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
@@ -289,10 +328,10 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="413" y="287" width="606" height="536" key="find.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1581091254500" />
-    <state x="664" y="347" key="git4idea.merge.GitPullDialog" timestamp="1582130473639">
+    <state x="664" y="347" key="git4idea.merge.GitPullDialog" timestamp="1582213233263">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="664" y="347" key="git4idea.merge.GitPullDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1582130473639" />
+    <state x="664" y="347" key="git4idea.merge.GitPullDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1582213233263" />
     <state x="372" y="260" key="run.anything.popup" timestamp="1581082992186">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>

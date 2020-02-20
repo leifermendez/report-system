@@ -79,6 +79,7 @@ div.ganttview-vtheader-series-name {
     overflow: hidden;
     text-overflow: ellipsis;
     height: 40px !important;
+    line-height: 40px;
 }
 
 div.ganttview-block-container {
@@ -133,6 +134,15 @@ div.ganttview-vtheader-item-name {
 
 div.ganttview-block {
     border-radius: 40px !important;
-    box-shadow: 0 3px 2px rgba(113, 112, 112, 0.23) !important;
-    border: 1px solid rgba(255, 255, 255, 0.59) !important
+    box-shadow: 0 2px 2px rgba(113, 112, 112, 0.23) !important;
+    border: 1px solid rgba(255, 255, 255, 0.59) !important;
+    cursor: pointer !important;
+}
+
+div.ganttview-block:hover {
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    box-shadow: 0 2px 5px rgba(33, 150, 243, 0.6) !important;
 }
