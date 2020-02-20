@@ -79,6 +79,7 @@ div.ganttview-vtheader-series-name {
     border-top: 1px solid #ffffff !important;
     white-space: nowrap;
     overflow: hidden;
+    border-left: solid 1px #b8d7ff;
     text-overflow: ellipsis;
     height: 40px !important;
     line-height: 40px;
@@ -147,4 +148,7 @@ div.ganttview-block:hover {
     -o-transition: all .2s ease-out;
     transition: all .2s ease-out;
     box-shadow: 0 2px 5px rgba(33, 150, 243, 0.6) !important;
+}
+.ganttview-vtheader-series .ganttview-vtheader-series-name:nth-child(2n) {
+    border-left: solid 1px #e6e6e6;
 }
