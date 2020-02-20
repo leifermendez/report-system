@@ -33,7 +33,7 @@
                 }
             }).then(r => {
                 const parentDiv = document.querySelector('#viewport-chart .ganttview-slide-container');
-                const pointer = document.querySelector('#viewport-chart .current_month .current_day').style;
+                const pointer = document.querySelector('#viewport-chart .current_day').style;
                 pointer.setProperty('--width_all', `${parseFloat(parentDiv.offsetHeight - 20)}px`);
             })
 
