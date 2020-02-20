@@ -29,23 +29,27 @@ class ChartController extends Controller
 
         $data = Projects::orderBy('id', 'DESC')
             ->with(['series'])
-            ->get()->toArray();
+            ->get();
 
         foreach ($data as $datum) {
             $clear_series = [];
-            foreach ($datum['series'] as $v) {
+            foreach ($datum->series as $v) {
+                $calc = $v->get_calc($v->id);
+                if ($calc['start'] && $calc['end']) {
+                    $clear_series[] = array_merge(
+                        [
+                            'color' => $v->color,
+                            'title' => $v->name
+                        ],
+                        $calc
+                    );
 
-                $clear_series[] = array_merge($v,
-                    [
-                        'color' => $v['get_tag']['color'],
-                        'title' => $v['get_tag']['name']
-                    ]);
-                $clear_series[] = [
-                    'title' => 'Estimación',
-                    'start' => $v['get_tag']['start_at'],
-                    'end' => $v['get_tag']['deadline_at']
-                ];
-
+                    $clear_series[] = [
+                        'title' => 'Estimación',
+                        'start' => $v->start_at,
+                        'end' => $v->deadline_at
+                    ];
+                }
             }
 
             $dataRaw[] = array(
@@ -53,7 +57,6 @@ class ChartController extends Controller
                 'name' => $datum['title'],
                 'series' => $clear_series
             );
-
         }
 
 

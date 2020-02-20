@@ -26,7 +26,7 @@
                             </div>
                             <div class="position-relative form-group">
                                 <label for="projectTags" class="">Proyectos</label>
-                                <select name="project_id" id="projectTags" class="form-control">
+                                <select name="projects_id" id="projectTags" class="form-control">
                                     @foreach($projects as $project)
                                         <option value="{{$project->id}}">{{$project->title}}</option>
                                     @endforeach

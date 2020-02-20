@@ -18,13 +18,6 @@ class Projects extends Model
 
     public function series()
     {
-        return $this->hasMany('App\Issues', 'projects_id', 'id')
-            ->with(['get_tag'])
-            ->orderBy('issues.id', 'ASC')
-            ->select('*',
-                DB::raw('count(*) as total_issues'),
-                DB::raw('MAX(issues.end) as end')
-            )
-            ->groupBy(['issues.tag_id','issues.id']);
+        return $this->hasMany('App\Tags', 'projects_id', 'id');
     }
 }

@@ -51,7 +51,7 @@ class TagController extends Controller
             'color' => 'required',
             'start_at' => 'required',
             'deadline_at' => 'required',
-            'project_id' => 'required'
+            'projects_id' => 'required'
         ]);
 
         Tags::create($validatedData);
@@ -98,7 +98,7 @@ class TagController extends Controller
             'color' => 'required',
             'start_at' => 'required',
             'deadline_at' => 'required',
-            'project_id' => 'required'
+            'projects_id' => 'required'
         ]);
 
         Tags::where('id', $id)

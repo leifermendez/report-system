@@ -37,7 +37,7 @@ class IssuesController extends Controller
         $report = Reports::where('id', $id_report)->with(['project'])->first();
         $features = Features::orderBy('name', 'ASC')->get();
         $developers = User::orderBy('name', 'ASC')->get();
-        $tags = Tags::orderBy('name', 'ASC')->where('project_id', $report->project->id)->get();
+        $tags = Tags::orderBy('name', 'ASC')->where('projects_id', $report->project->id)->get();
 
         return view($this->parent . '.create')->with([
             'features' => $features, 'report' => $report, 'developers' => $developers,
