@@ -31,11 +31,12 @@
                     draggable: false,
                     resizable: false
                 }
-            }).then(r=>console.log('----',r))
+            }).then(r => {
+                const innerWidth = document.querySelector('#viewport-chart .ganttview-slide-container');
+                const pointer = document.querySelector('#viewport-chart .current_day').style;
+                pointer.setProperty('--width_all', `${parseFloat(innerWidth - 20)}px`);
+            })
 
-            const innerWidth = document.querySelector('#viewport-chart .ganttview-slide-container');
-            const pointer = document.querySelector('#viewport-chart .current_day').style;
-            pointer.setProperty('--width_all', `${parseFloat(innerWidth - 20)}px`);
 
             // $("#ganttChart").resize()
         });
