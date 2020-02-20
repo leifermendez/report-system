@@ -39,7 +39,7 @@ class ChartController extends Controller
                     $clear_series[] = array_merge(
                         [
                             'color' => $v->color,
-                            'title' => '<canvas></canvas>'.$v->name
+                            'title' => '<canvas>a</canvas> '.$v->name
                         ],
                         $calc
                     );
