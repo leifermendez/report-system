@@ -45,7 +45,7 @@ class ChartController extends Controller
                     );
 
                     $clear_series[] = [
-                        'title' => 'Estimación',
+                        'title' => '<span class="text-italic"><i class="fas fa-clock"></i> Estimación</span>',
                         'start' => $v->start_at,
                         'end' => $v->deadline_at
                     ];

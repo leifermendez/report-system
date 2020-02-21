@@ -97,6 +97,7 @@ div.ganttview-hzheader-day {
     width: 21px !important;
     font-size: .65rem !important;
     font-weight: 600 !important;
+    height: 40px !important;
 }
 
 div.ganttview-vtheader {
@@ -165,4 +166,14 @@ div.ganttview-block:hover {
     height: var(--width_all);
     z-index: 9;
     width: 10px;
+}
+
+.timeline-line {
+    width: 600px;
+    margin-left: 3px;
+    height: 2px;
+    border-radius: 0 !important;
+    border: 0 !important;
+    background-color: #00bcd4;
+    box-shadow: 0 0 0 !important
 }

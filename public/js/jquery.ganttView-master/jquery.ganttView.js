@@ -237,13 +237,15 @@ behavior: {
         function addBlocks(div, data, cellWidth, start) {
             var rows = jQuery("div.ganttview-blocks div.ganttview-block-container", div);
             var rowIdx = 0;
+
             for (var i = 0; i < data.length; i++) {
                 for (var j = 0; j < data[i].series.length; j++) {
                     var series = data[i].series[j];
                     var size = DateUtils.daysBetween(series.start, series.end) + 1;
                     var offset = DateUtils.daysBetween(start, series.start);
+                    var check_math = /^Estimación/.test(series.title);
                     var block = jQuery("<div>", {
-                        "class": "ganttview-block",
+                        "class": `ganttview-block ${(check_math) ? 'timeline-line' : ''}`,
                         "title": series.title + ", " + size + " days",
                         "css": {
                             "width": ((size * cellWidth) - 9) + "px",
