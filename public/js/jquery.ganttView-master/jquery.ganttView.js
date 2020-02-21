@@ -162,7 +162,12 @@ behavior: {
                 }).append(data[i].name));
                 var seriesDiv = jQuery("<div>", {"class": "ganttview-vtheader-series"});
                 for (var j = 0; j < data[i].series.length; j++) {
-                    seriesDiv.append(jQuery("<div>", {"class": "ganttview-vtheader-series-name"})
+                    seriesDiv.append(jQuery("<div>", {
+                        "class": "ganttview-vtheader-series-name",
+                        "css": {
+                            "background-color": data[i].series[j].color
+                        }
+                    })
                         .append(data[i].series[j].title));
                 }
                 itemDiv.append(seriesDiv);
@@ -246,7 +251,7 @@ behavior: {
                     var check_math = /\b(\w*Estimación\w*)\b/.test(series.title);
                     var objAttr = {
                         "class": `ganttview-block ${(check_math) ? 'timeline-line' : '-->' + check_math}`,
-                        "title": series.title + ", " + size + " days",
+                        // "title": series.title + ", " + size + " days",
                         "css": {
                             "width": ((size * cellWidth) - 9) + "px",
                             "margin-left": ((offset * cellWidth) + 3) + "px"
@@ -258,9 +263,9 @@ behavior: {
                     if (data[i].series[j].color) {
                         block.css("background-color", data[i].series[j].color);
                     }
-                    if(check_math){
+                    if (check_math) {
                         block.append(jQuery("<div>", {"class": "ganttview-block-text"}).text(`${size} Días`));
-                    }else{
+                    } else {
                         block.append(jQuery("<div>", {"class": "ganttview-block-text"}).text(`${size}`));
                     }
                     jQuery(rows[rowIdx]).append(block);

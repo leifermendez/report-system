@@ -88,7 +88,7 @@ div.ganttview-vtheader-series-name {
 }
 
 div.ganttview-block-container {
-    background: #e6e6e6 !important;
+    background: #fff !important;
     height: 40px !important;
     padding: .45rem 0 0 0 !important;
 }
