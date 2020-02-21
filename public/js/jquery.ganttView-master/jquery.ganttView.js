@@ -249,7 +249,8 @@ behavior: {
                         "title": series.title + ", " + size + " days",
                         "css": {
                             "width": ((size * cellWidth) - 9) + "px",
-                            "margin-left": ((offset * cellWidth) + 3) + "px"
+                            "margin-left": ((offset * cellWidth) + 3) + "px",
+                            "background-color": `${series.color} !important`
                         }
                     });
                     addBlockData(block, data[i], series);
