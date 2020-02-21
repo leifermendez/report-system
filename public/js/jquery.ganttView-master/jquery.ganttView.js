@@ -258,7 +258,9 @@ behavior: {
                     if (data[i].series[j].color) {
                         block.css("background-color", data[i].series[j].color);
                     }
-                    block.append(jQuery("<div>", {"class": "ganttview-block-text"}).text(`${size} D`));
+                    if(check_math){
+                        block.append(jQuery("<div>", {"class": "ganttview-block-text"}).text(`${size} Días`));
+                    }
                     jQuery(rows[rowIdx]).append(block);
                     rowIdx = rowIdx + 1;
                 }
