@@ -20,6 +20,7 @@ class ReportLight extends Controller
         $general = array(
             'hours' => 0
         );
+        $sort = ($request->sort === 'asc') ? SORT_ASC : SORT_DESC;
         $dataRaw = [];
         $data = Reports::orderBy('id', 'desc')
             ->where(function ($q) use ($request) {
@@ -37,14 +38,15 @@ class ReportLight extends Controller
         foreach ($data as $d) {
             $hours_all = array_sum(array_column($d->issues->toArray(), 'hours'));
             $general['hours'] += $hours_all;
-            $dataRaw[$d->project->title]['hours_all'] = $hours_all;
+            $dataRaw[$d->project->id]['title'] = $d->project->title;
+            $dataRaw[$d->project->id]['hours_all'] = $hours_all;
             foreach ($d->issues as $i) {
-                $dataRaw[$d->project->title]['list'][] = $i;
+                $dataRaw[$d->project->id]['list'][] = $i;
             }
 
 
         }
-
+        array_multisort($dataRaw, $sort);
         return view($this->parent . '.view')->with(['data' => $dataRaw]);
 
     }

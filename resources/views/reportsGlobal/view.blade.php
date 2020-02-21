@@ -31,7 +31,7 @@
                         <div class="p-4 line-height-report">
 
                             @foreach($data as $k => $v)
-                                <h6><strong>{{$k}} ({{$v['hours_all']}}) horas</strong></h6>
+                                <h6><strong>{{$v['title']}} ({{$v['hours_all']}}) horas</strong></h6>
                                 <ul>
                                     @foreach($v['list'] as $i)
                                         @if($i['hours'])
