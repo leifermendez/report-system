@@ -244,15 +244,18 @@ behavior: {
                     var size = DateUtils.daysBetween(series.start, series.end) + 1;
                     var offset = DateUtils.daysBetween(start, series.start);
                     var check_math = /\b(\w*Estimación\w*)\b/.test(series.title);
-                    var block = jQuery("<div>", {
-                        "class": `ganttview-block ${(check_math) ? 'timeline-line' : '-->'+check_math}`,
+                    var objAttr = {
+                        "class": `ganttview-block ${(check_math) ? 'timeline-line' : '-->' + check_math}`,
                         "title": series.title + ", " + size + " days",
                         "css": {
                             "width": ((size * cellWidth) - 9) + "px",
-                            "margin-left": ((offset * cellWidth) + 3) + "px",
-                            "background-color": `${series.color} !important`
+                            "margin-left": ((offset * cellWidth) + 3) + "px"
                         }
-                    });
+                    };
+                    if (check_math) {
+                        objAttr.css['background-color'] = `${series.color} !important`
+                    }
+                    var block = jQuery("<div>", objAttr);
                     addBlockData(block, data[i], series);
                     if (data[i].series[j].color) {
                         block.css("background-color", data[i].series[j].color);
