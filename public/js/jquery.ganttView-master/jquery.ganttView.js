@@ -258,7 +258,7 @@ behavior: {
                     if (data[i].series[j].color) {
                         block.css("background-color", data[i].series[j].color);
                     }
-                    block.append(jQuery("<div>", {"class": "ganttview-block-text"}).text(size));
+                    block.append(jQuery("<div>", {"class": "ganttview-block-text"}).text(`${size} D`));
                     jQuery(rows[rowIdx]).append(block);
                     rowIdx = rowIdx + 1;
                 }
