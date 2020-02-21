@@ -186,7 +186,7 @@ behavior: {
                     }).append(monthNames[m] + "/" + y));
                     for (var d in dates[y][m]) {
                         daysDiv.append(jQuery("<div>", {
-                            "class": `ganttview-hzheader-day --- ${d} ${parseInt(d)-1} ${now.day}  ${((parseInt(d)-1 == now.day) && (m == now.month)) ?
+                            "class": `ganttview-hzheader-day --- ${d} ${parseInt(d)-1} ${now.day} ${dates[y][m][d].getDate()} ${((dates[y][m][d].getDate() == now.day) && (m == now.month)) ?
                                 'current_day' : ''}`
                         })
                             .append(dates[y][m][d].getDate()));
