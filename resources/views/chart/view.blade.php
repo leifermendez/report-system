@@ -24,7 +24,7 @@
                 slideWidth: '100%',
                 behavior: {
                     onClick: function (data) {
-                        window.open(`/reports/2`)
+                        window.open(`/reports/${data.report_id}`)
                     },
                     draggable: false,
                     resizable: false

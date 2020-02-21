@@ -182,7 +182,7 @@ behavior: {
                     totalW = totalW + w;
                     monthsDiv.append(jQuery("<div>", {
                         "class": `ganttview-hzheader-month ${(m == now.month) ? 'current_month' : ''}`,
-                        "css": {"width": (w - 1) + "px"}
+                        "css": {"width": (w - 0) + "px"}
                     }).append(monthNames[m] + "/" + y));
                     for (var d in dates[y][m]) {
                         daysDiv.append(jQuery("<div>", {
