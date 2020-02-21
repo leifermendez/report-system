@@ -220,21 +220,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:Reportes" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:Reportes" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@34582fbc" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:Reportes" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@213b9d63" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:Reportes" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@592064dc" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -262,7 +247,9 @@
       <workItem from="1581599335080" duration="1951000" />
       <workItem from="1581712353950" duration="612000" />
       <workItem from="1582213185512" duration="920000" />
-      <workItem from="1582214181164" duration="6278000" />
+      <workItem from="1582214181164" duration="8081000" />
+      <workItem from="1582272256873" duration="2000" />
+      <workItem from="1582274273657" duration="52000" />
     </task>
     <servers />
   </component>

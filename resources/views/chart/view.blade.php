@@ -19,8 +19,6 @@
 
 
         document.addEventListener("DOMContentLoaded", function (event) {
-            console.log(@json($data))
-
             jQuery("#ganttChart").ganttView({
                 data: @json($data),
                 slideWidth: '100%',
