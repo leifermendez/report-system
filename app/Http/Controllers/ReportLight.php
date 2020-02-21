@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class ReportLight extends Controller
 {
-    private $parent = 'reports';
+    private $parent = 'reportsGlobal';
 
     /**
      * Display a listing of the resource.
@@ -20,6 +20,7 @@ class ReportLight extends Controller
         $general = array(
             'hours' => 0
         );
+        $dataRaw = [];
         $data = Reports::orderBy('id', 'desc')
             ->where(function ($q) use ($request) {
                 if (($request->date_begin) && ($request->date_finish)) {
@@ -29,17 +30,22 @@ class ReportLight extends Controller
                         ->whereDate('date_finish', '<=', $finish);
                 }
             })
-            ->with(['issues'])->get();
+            ->with(['project', 'issues'])->get();
 
-        dd($data);
-
+//        dd($data);
+//
         foreach ($data as $d) {
             $hours_all = array_sum(array_column($d->issues->toArray(), 'hours'));
             $general['hours'] += $hours_all;
-            $d->setAttribute('hours_all', $hours_all);
+            $dataRaw[$d->project->title]['hours_all'] = $hours_all;
+            foreach ($d->issues as $i) {
+                $dataRaw[$d->project->title]['list'][] = $i;
+            }
+
+
         }
 
-        return view($this->parent . '.view')->with(['data' => $data, 'general' => $general]);
+        return view($this->parent . '.view')->with(['data' => $dataRaw]);
 
     }
 
