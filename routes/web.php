@@ -27,5 +27,6 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('/chart', 'ChartController');
     Route::resource('/tags', 'TagController');
 });
+Route::resource('/resume', 'ChartController', ['only' => 'index']);
 
 
