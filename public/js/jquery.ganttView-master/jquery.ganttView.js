@@ -243,7 +243,7 @@ behavior: {
                     var series = data[i].series[j];
                     var size = DateUtils.daysBetween(series.start, series.end) + 1;
                     var offset = DateUtils.daysBetween(start, series.start);
-                    var check_math = /^Estimación/.test(series.title);
+                    var check_math = /\b(\w*Estimacion\w*)\b/.test(series.title);
                     var block = jQuery("<div>", {
                         "class": `ganttview-block ${(check_math) ? 'timeline-line' : ''}`,
                         "title": series.title + ", " + size + " days",
