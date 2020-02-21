@@ -23,6 +23,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('/projects', 'ProjectsController');
     Route::resource('/features', 'FeaturesController');
     Route::resource('/reports', 'ReportsController');
+    Route::resource('/reports-global', 'ReportLight', ['only' => 'index']);
     Route::resource('/issues', 'IssuesController');
     Route::resource('/chart', 'ChartController');
     Route::resource('/tags', 'TagController');
