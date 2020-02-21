@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be83bd95-3b8f-4297-bd77-86b0b417c2c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/jquery.ganttView-master/jquery.ganttView.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.ganttView-master/jquery.ganttView.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -244,7 +243,7 @@
       <workItem from="1582214181164" duration="8081000" />
       <workItem from="1582272256873" duration="2000" />
       <workItem from="1582274273657" duration="1524000" />
-      <workItem from="1582298001386" duration="4025000" />
+      <workItem from="1582298001386" duration="4136000" />
     </task>
     <servers />
   </component>

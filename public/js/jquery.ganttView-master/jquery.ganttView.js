@@ -260,6 +260,8 @@ behavior: {
                     }
                     if(check_math){
                         block.append(jQuery("<div>", {"class": "ganttview-block-text"}).text(`${size} Días`));
+                    }else{
+                        block.append(jQuery("<div>", {"class": "ganttview-block-text"}).text(`${size}`));
                     }
                     jQuery(rows[rowIdx]).append(block);
                     rowIdx = rowIdx + 1;
