@@ -172,5 +172,6 @@ div.ganttview-block:hover {
     height: 2px !important;
     border-radius: 0 !important;
     border: 0 !important;
-    box-shadow: 0 0 0 !important
+    box-shadow: 0 0 0 !important;
+    background-color: rgb(0, 188, 212) !important;
 }

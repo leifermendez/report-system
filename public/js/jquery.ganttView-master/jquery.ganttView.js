@@ -252,9 +252,7 @@ behavior: {
                             "margin-left": ((offset * cellWidth) + 3) + "px"
                         }
                     };
-                    if (check_math) {
-                        objAttr.css['background-color'] = `${series.color} !important`
-                    }
+
                     var block = jQuery("<div>", objAttr);
                     addBlockData(block, data[i], series);
                     if (data[i].series[j].color) {
