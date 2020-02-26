@@ -33,6 +33,12 @@
                                 </select>
                             </div>
                             <div class="position-relative form-group">
+                                <label for="descriptionTag" class="">Descripcion</label>
+                                <textarea name="description" rows="8" id="descriptionTag"
+                                          class="form-control">
+                                </textarea>
+                            </div>
+                            <div class="position-relative form-group">
                                 <label for="startAtTags" class="">Inicio</label>
                                 <input name="start_at" id="startAtTags"
                                        placeholder=""

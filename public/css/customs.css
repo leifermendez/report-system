@@ -191,3 +191,15 @@ div.ganttview-block:hover {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
 }
+.footer-section-chart{
+    background: #fbd987;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    min-height: 100px;
+    left: 0;
+    z-index: 9;
+    padding: .5rem;
+    color: #222;
+    font-weight: 500;
+}

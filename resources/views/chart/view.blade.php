@@ -5,6 +5,21 @@
         <div class="m-0" style="overflow-y: auto" id="ganttChart"></div>
         <br/><br/>
         <div id="eventMessage"></div>
+        <div id="footer-section-chart" class="footer-section-chart">
+            <div class="mb-1"><strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, non?</strong></div>
+            <div>
+                <ul class="font-italic">
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum dolor.</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
 @endsection
@@ -15,6 +30,10 @@
                 return a;
             })
             return data;
+        }
+
+        function addNewSection() {
+            const divFooter = document.querySelector('#viewport-chart')
         }
 
 
