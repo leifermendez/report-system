@@ -6,7 +6,13 @@
         <br/><br/>
         <div id="eventMessage"></div>
         <div id="footer-section-chart" class="footer-section-chart">
-            <div class="mb-1"><strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, non?</strong></div>
+            <div class="pull-right">
+                <button class="btn btn-sm btn-default" id="close-btn" onclick="closeKeepNote()"><i
+                        class="fas fa-times"></i></button>
+            </div>
+            <div class="mb-1"><strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, non?</strong>
+
+            </div>
             <div>
                 <ul class="font-italic">
                     <li>Lorem ipsum dolor.</li>
@@ -25,11 +31,17 @@
 @endsection
 @section('script')
     <script type="text/javascript">
+        const footerElement = document.querySelector('#footer-section-chart');
+
         function parseDate(data = {}) {
             data.forEach(a => {
                 return a;
             })
             return data;
+        }
+
+        function closeKeepNote(event) {
+            footerElement.style.display = 'none'
         }
 
         function addNewSection() {
@@ -38,6 +50,8 @@
 
 
         document.addEventListener("DOMContentLoaded", function (event) {
+
+
             jQuery("#ganttChart").ganttView({
                 data: @json($data),
                 slideWidth: '100%',
@@ -55,8 +69,21 @@
                 pointer.setProperty('--width_all', `${parseFloat(parentDiv.offsetHeight - 20)}px`);
             })
 
+            const elementHover = document.querySelectorAll('.ganttview-vtheader-series-name');
 
-            // $("#ganttChart").resize()
+            elementHover.forEach(function (elem) {
+                elem.addEventListener("mouseover", function (event) {
+                    // highlight the mouseover target
+                    footerElement.style.display = 'block';
+                    event.target.style.color = "orange";
+                    // reset the color after a short delay
+                    // setTimeout(function () {
+                    event.target.style.color = "";
+                    //     footerElement.style.display = 'none';
+                    // }, 500);
+                }, false);
+            });
+
         });
 
 

@@ -76,6 +76,7 @@ input[type=checkbox]:checked:disabled + label:before {
 }
 
 div.ganttview-vtheader-series-name {
+    cursor: pointer;
     font-size: .7rem !important;
     width: 199px !important;
     border-top: 1px solid #ffffff !important;
@@ -192,6 +193,7 @@ div.ganttview-block:hover {
     font-weight: 900;
 }
 .footer-section-chart{
+    display: none;
     background: #fbd987;
     position: fixed;
     bottom: 0;
