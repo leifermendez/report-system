@@ -51,7 +51,8 @@ class TagController extends Controller
             'color' => 'required',
             'start_at' => 'required',
             'deadline_at' => 'required',
-            'projects_id' => 'required'
+            'projects_id' => 'required',
+            'projects_id' => 'required',
         ]);
 
         Tags::create($validatedData);
@@ -80,6 +81,7 @@ class TagController extends Controller
         $projects = Projects::orderBy('id', 'DESC')->get();
         $data = Tags::with(['projects'])->find($id);
 
+//        dd($data->trixRichText());
         return view($this->parent . '.edit')->with(['data' => $data,
             'projects' => $projects]);
     }
@@ -93,6 +95,7 @@ class TagController extends Controller
      */
     public function update(Request $request, $id)
     {
+
         $validatedData = $request->validate([
             'name' => 'required',
             'color' => 'required',
@@ -101,8 +104,9 @@ class TagController extends Controller
             'projects_id' => 'required'
         ]);
 
+
         Tags::where('id', $id)
-            ->update($validatedData);
+            ->update(array_merge($validatedData, $request->input('tags-trixFields')));
 
         return redirect($this->parent);
     }

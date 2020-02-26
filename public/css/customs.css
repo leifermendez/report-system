@@ -203,3 +203,6 @@ div.ganttview-block:hover {
     color: #222;
     font-weight: 500;
 }
+.trix-content {
+    min-height: 12rem;
+}
