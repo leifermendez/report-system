@@ -78,8 +78,9 @@
 
                 elem.addEventListener("mouseover", function (event) {
                     // highlight the mouseover target
-                    footerElement.style.display = 'block';
-
+                    if (elem.dataset.content) {
+                        footerElement.style.display = 'block';
+                    }
                     footerElement.querySelector('.inside-content').innerHTML = `${(elem.dataset.content) ? elem.dataset.content : ''}`;
                     event.target.style.color = "orange";
                     // reset the color after a short delay
