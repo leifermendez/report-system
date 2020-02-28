@@ -46,8 +46,7 @@
                                     @endforeach
                                 </select>
                             </div>
-                            {!! $data->trix('content') !!}
-
+                            @trix(\App\Tags::class, 'content')
                             <button class="mt-1 btn btn-primary">Enviar</button>
                         </form>
                     </div>
