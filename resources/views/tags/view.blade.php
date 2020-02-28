@@ -39,7 +39,10 @@
                             </thead>
                             <tbody>
                             @foreach($data as $d)
-                                <tr>
+                                <tr class="{{($d->is_range === 'current') ?
+                                    'row-danger-border':
+                                       (($d->is_range === 'next_week') ? 'row-warning-border': '')
+                                    }}">
                                     <th scope="row">{{$d->id}}</th>
                                     <td>{{$d->name}}</td>
                                     <td>

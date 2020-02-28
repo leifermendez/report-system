@@ -208,3 +208,16 @@ div.ganttview-block:hover {
 .trix-content {
     min-height: 12rem;
 }
+.opacity-full:hover{
+    opacity: 1 !important;
+}
+
+.row-danger-border{
+    background: rgba(244, 67, 54, 0.05);
+    border-left: solid 2px #F44336;
+}
+
+.row-warning-border{
+    background: rgba(255, 152, 0, 0.08);
+    border-left: solid 2px #f4dd08;
+}

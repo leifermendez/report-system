@@ -18,22 +18,6 @@
                                        class="form-control">
                             </div>
                             <div class="position-relative form-group">
-                                <label for="colorTags" class="">Color</label>
-                                <input name="color" id="colorTags"
-                                       placeholder=""
-                                       type="text"
-                                       class="form-control">
-                            </div>
-                            <div class="position-relative form-group">
-                                <label for="projectTags" class="">Proyectos</label>
-                                <select name="projects_id" id="projectTags" class="form-control">
-                                    @foreach($projects as $project)
-                                        <option value="{{$project->id}}">{{$project->title}}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                            {!! $data->trix('content') !!}
-                            <div class="position-relative form-group">
                                 <label for="startAtTags" class="">Inicio</label>
                                 <input name="start_at" id="startAtTags"
                                        placeholder=""
@@ -47,6 +31,23 @@
                                        type="date"
                                        class="form-control">
                             </div>
+                            <div class="position-relative form-group">
+                                <label for="colorTags" class="">Color</label>
+                                <input name="color" id="colorTags"
+                                       placeholder=""
+                                       type="color"
+                                       class="form-control">
+                            </div>
+                            <div class="position-relative form-group">
+                                <label for="projectTags" class="">Proyectos</label>
+                                <select name="projects_id" id="projectTags" class="form-control">
+                                    @foreach($projects as $project)
+                                        <option value="{{$project->id}}">{{$project->title}}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            {!! $data->trix('content') !!}
+
                             <button class="mt-1 btn btn-primary">Enviar</button>
                         </form>
                     </div>

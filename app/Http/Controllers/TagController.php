@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Organizations;
 use App\Projects;
 use App\Tags;
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Http\Request;
 
@@ -19,10 +20,19 @@ class TagController extends Controller
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function index()
+    public function index(Request $request)
     {
+
+
         $data = Tags::orderBy('id', 'desc')->with(['projects'])
             ->get();
+
+        $data->map(function ($item) {
+
+            $item->is_range = (Carbon::now()->startOfDay()->between($item->start_at, $item->deadline_at)) ? 'current' :
+                (Carbon::now()->addWeek()->between($item->start_at, $item->deadline_at) ? 'next_week' : '');
+            return $item;
+        });
 
         return view($this->parent . '.view')->with(['data' => $data]);
     }

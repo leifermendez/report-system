@@ -10,20 +10,23 @@
                 <button class="btn btn-sm btn-default" id="close-btn" onclick="closeKeepNote()"><i
                         class="fas fa-times"></i></button>
             </div>
-            <div class="mb-1"><strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, non?</strong>
+            <div class="inside-content">
+                <div class="mb-1"><strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet,
+                        non?</strong>
 
-            </div>
-            <div>
-                <ul class="font-italic">
-                    <li>Lorem ipsum dolor.</li>
-                    <li>Lorem ipsum dolor.</li>
-                    <li>Lorem ipsum dolor.</li>
-                    <li>Lorem ipsum dolor.</li>
-                    <li>Lorem ipsum dolor.</li>
-                    <li>Lorem ipsum dolor.</li>
-                    <li>Lorem ipsum dolor.</li>
-                    <li>Lorem ipsum dolor.</li>
-                </ul>
+                </div>
+                <div>
+                    <ul class="font-italic">
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum dolor.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -72,9 +75,12 @@
             const elementHover = document.querySelectorAll('.ganttview-vtheader-series-name');
 
             elementHover.forEach(function (elem) {
+
                 elem.addEventListener("mouseover", function (event) {
                     // highlight the mouseover target
                     footerElement.style.display = 'block';
+
+                    footerElement.querySelector('.inside-content').innerHTML = `${(elem.dataset.content) ? elem.dataset.content : ''}`;
                     event.target.style.color = "orange";
                     // reset the color after a short delay
                     // setTimeout(function () {

@@ -162,7 +162,8 @@ behavior: {
                 }).append(data[i].name));
                 var seriesDiv = jQuery("<div>", {"class": "ganttview-vtheader-series"});
                 for (var j = 0; j < data[i].series.length; j++) {
-                    seriesDiv.append(jQuery("<div>", {"class": "ganttview-vtheader-series-name"})
+                    seriesDiv.append(jQuery("<div>", {"class": "ganttview-vtheader-series-name",
+                    "data-content":data[i].series[j].content})
                         .append(data[i].series[j].title));
                 }
                 itemDiv.append(seriesDiv);

@@ -1,5 +1,5 @@
 reportDate = (from, to) => {
-    window.location.href = `/reports?date_begin=${from}&date_finish=${to}`
+    window.location.href = `${window.location.pathname}?date_begin=${from}&date_finish=${to}`
 }
 
 $(function () {

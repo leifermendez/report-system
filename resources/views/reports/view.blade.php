@@ -29,7 +29,8 @@
                     </div>
                     <div class="card-body">
                         @foreach($data as $d)
-                            <div class="card mb-3">
+                            <div class="card mb-3 opacity-full"
+                                 style="{{!$d->is_range ? 'opacity:.3':'aa'}}">
                                 <div class="card-header d-flex justify-content-between">
                                     <div data-toggle="tooltip"
                                          data-original-title="{{$d->project->organization->name}}">
@@ -67,19 +68,38 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <blockquote class="blockquote mb-0 report-text-block">
-                                        <ul class="m-0 p-0">
-                                            @foreach($d->issues as $i)
-                                                <li data-toggle="tooltip"
-                                                    data-original-title="Tag: {{$i->get_tag->name}} - {{$i->hours}} horas"
-                                                    class="badge badge-light-gray mb-1">
-                                                    <canvas class="pointer-color"
-                                                            style="background-color: {{$i->get_tag->color}}"></canvas>
-                                                    {{$i->title}}</li>
-                                            @endforeach
+                                    @if(count($d->issues))
+                                        <blockquote class="blockquote mb-0 report-text-block">
+                                            <ul class="m-0 p-0">
+                                                @foreach($d->issues as $i)
+                                                    <li data-toggle="tooltip"
+                                                        data-original-title="Tag: {{$i->get_tag->name}} - {{$i->hours}} horas"
+                                                        class="badge badge-light-gray mb-1">
+                                                        <canvas class="pointer-color"
+                                                                style="background-color: {{$i->get_tag->color}}"></canvas>
+                                                        {{$i->title}}</li>
+                                                @endforeach
 
-                                        </ul>
-                                    </blockquote>
+                                            </ul>
+                                        </blockquote>
+                                    @else
+                                        <div class="text-center p-3">
+                                            <a href="/issues/create?report={{$d->id}}"
+                                               class="btn btn-sm"
+                                               data-toggle="tooltip" title=""
+                                               data-original-title="Issues">
+                                                <div>
+                                                    <i class="fas fa-folder-open fa-3x"></i>
+                                                </div>
+                                                <div class="p-1">
+
+                                                    <i>Sin contenido</i>
+                                                </div>
+                                            </a>
+
+                                        </div>
+
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-12">

@@ -32,13 +32,11 @@ class Tags extends Model
     public function get_calc($arg)
     {
         $query = Issues::where('tag_id', $arg);
-        $data = [
+        return [
             'start' => $query->orderBy('start', 'ASC')->pluck('start')->first(),
             'end' => $query->orderBy('end', 'DESC')->pluck('end')->last(),
             'report_id' =>  $query->orderBy('end', 'DESC')->pluck('report_id')->last(),
         ];
-
-        return $data;
     }
 
 }

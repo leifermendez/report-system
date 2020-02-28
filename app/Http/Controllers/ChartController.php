@@ -34,12 +34,14 @@ class ChartController extends Controller
         foreach ($data as $datum) {
             $clear_series = [];
             foreach ($datum->series as $v) {
+
                 $calc = $v->get_calc($v->id);
                 if ($calc['start'] && $calc['end']) {
                     $clear_series[] = array_merge(
                         [
                             'color' => $v->color,
-                            'title' => "<span><canvas class='pointer-color' style='background-color:" . $v->color . "'></canvas>  " . $v->name . "</span>"
+                            'title' => "<span><canvas class='pointer-color' style='background-color:" . $v->color . "'></canvas>  " . $v->name . "</span>",
+                            'content' => $v->content
                         ],
                         $calc
                     );
@@ -47,7 +49,8 @@ class ChartController extends Controller
                     $clear_series[] = [
                         'title' => '<span class="text-white"><i class="fas fa-clock"></i> Estimación</span>',
                         'start' => $v->start_at,
-                        'end' => $v->deadline_at
+                        'end' => $v->deadline_at,
+                        'content' => $v->content
                     ];
                 }
             }
@@ -58,7 +61,6 @@ class ChartController extends Controller
                 'series' => $clear_series
             );
         }
-
 
         return view($this->parent . '.view')->with(['data' => $dataRaw]);
     }
