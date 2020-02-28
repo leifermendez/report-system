@@ -23,7 +23,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
+    @trixassets
     <!-- Styles -->
 {{--    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">--}}
     <link href="{{ asset('js/jquery-date-range-picker-master/dist/daterangepicker.min.css') }}" rel="stylesheet">

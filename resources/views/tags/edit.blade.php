@@ -37,6 +37,7 @@
                                     @endforeach
                                 </select>
                             </div>
+                            {!! $data->trix('content') !!}
                             <div class="position-relative form-group">
                                 <label for="startAtTags" class="">Inicio</label>
                                 <input name="start_at" id="startAtTags"
@@ -60,4 +61,18 @@
             </div>
         </div>
     </div>
+
+    <script type="text/javascript">
+
+        function setValue(text = '') {
+            const trixEditor = document.querySelector("trix-editor")
+            trixEditor.editor.insertHTML(text);
+        }
+
+        document.addEventListener("DOMContentLoaded", function (event) {
+            setValue(`{!! $data->content !!}`)
+        });
+
+    </script>
+
 @endsection

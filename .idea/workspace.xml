@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be83bd95-3b8f-4297-bd77-86b0b417c2c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportLight.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportLight.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/reportsGlobal/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reportsGlobal/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Tags.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Tags.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,19 +193,19 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\resources\views" />
-      <recent name="C:\Users\ZIIM Abierto\PhpstormProjects\Mochileros\report-system\public\js\jquery.ganttView-master\lib" />
-      <recent name="C:\Users\ZIIM Abierto\PhpstormProjects\Mochileros\report-system\resources\views" />
-      <recent name="C:\Users\ZIIM Abierto\PhpstormProjects\Mochileros\report-system\public\js" />
-      <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\public\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\public" />
       <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\public\js" />
       <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\resources\css" />
       <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\resources\js" />
       <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\resources\views" />
+      <recent name="C:\Users\ZIIM Abierto\PhpstormProjects\Mochileros\report-system\public\js\jquery.ganttView-master\lib" />
+      <recent name="C:\Users\ZIIM Abierto\PhpstormProjects\Mochileros\report-system\resources\views" />
+      <recent name="C:\Users\ZIIM Abierto\PhpstormProjects\Mochileros\report-system\public\js" />
+      <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\public\css" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -245,8 +243,7 @@
       <workItem from="1582214181164" duration="8081000" />
       <workItem from="1582272256873" duration="2000" />
       <workItem from="1582274273657" duration="1524000" />
-      <workItem from="1582298001386" duration="7064000" />
-      <workItem from="1582308789228" duration="2609000" />
+      <workItem from="1582298001386" duration="5057000" />
     </task>
     <servers />
   </component>
@@ -271,10 +268,10 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="43" y="205" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1582213351023" />
-    <state x="439" y="314" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582308868333">
+    <state x="439" y="314" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582135391197">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="439" y="314" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1582308868333" />
+    <state x="439" y="314" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1582135391197" />
     <state x="718" y="418" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1581069171746">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
@@ -283,22 +280,22 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="489" y="314" key="FileChooserDialogImpl/0.30.1920.1050@0.30.1920.1050" timestamp="1581072613250" />
-    <state width="1293" height="285" key="GridCell.Tab.0.bottom" timestamp="1582308793875">
+    <state width="1293" height="285" key="GridCell.Tab.0.bottom" timestamp="1582214252308">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1293" height="285" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1582308793875" />
-    <state width="1293" height="285" key="GridCell.Tab.0.center" timestamp="1582308793875">
+    <state width="1293" height="285" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1582214252308" />
+    <state width="1293" height="285" key="GridCell.Tab.0.center" timestamp="1582214252308">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1293" height="285" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1582308793875" />
-    <state width="1293" height="285" key="GridCell.Tab.0.left" timestamp="1582308793875">
+    <state width="1293" height="285" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1582214252308" />
+    <state width="1293" height="285" key="GridCell.Tab.0.left" timestamp="1582214252308">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1293" height="285" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1582308793875" />
-    <state width="1293" height="285" key="GridCell.Tab.0.right" timestamp="1582308793875">
+    <state width="1293" height="285" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1582214252308" />
+    <state width="1293" height="285" key="GridCell.Tab.0.right" timestamp="1582214252308">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1293" height="285" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1582308793875" />
+    <state width="1293" height="285" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1582214252308" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1582213285290">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>

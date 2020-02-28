@@ -32,6 +32,7 @@
                                     @endforeach
                                 </select>
                             </div>
+                            {!! $data->trix('content') !!}
                             <div class="position-relative form-group">
                                 <label for="startAtTags" class="">Inicio</label>
                                 <input name="start_at" id="startAtTags"
