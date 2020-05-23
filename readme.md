@@ -1,23 +1,44 @@
-
 # Sistema de Reporte
+Sistema de control, gestión y reporte de tareas. El cual nos proporciona una variedad de módulos 
+los cuales se complementan para proporcionar una mejor visualización de hitos sobre nuestro proyecto
 
-![](https://i.imgur.com/6dCTYCL.png)
+![](https://i.imgur.com/AX1MjPv.png)
 
-El siguiente sistema, maneja cuatro (4) módulos los cuales nos complementar el sistema de reportes.
-El sistema nos permite sacar reportes por rango de fehcas, proyectos y ornizaciones.
+![](https://i.imgur.com/iRI7t8t.png)
 
-> Se encuentra **DESARROLLO** cualquier parte de la comunidad que quiera unirse puede hacerlo realizando los PR
- 
-#### Instalar
-```
-git clone https://github.com/leifermendez/report-system
+![](https://i.imgur.com/RoNY25H.png)
+---
 
-composer install
+#### Demo
 
-// Debes crear tu .env basado en el .env.example
+Ver [DEMO](https://reportsystemapp.herokuapp.com/)
 
-php artisan key:generate
+User: `demo@demo.com`
 
-php artisan migrate
+Pass: `12345678`
 
-```
+#### Antes de empezar
+Recuerda tener los requerimientos minimos para el uso de este sistema
+
+- PHP ^7.1.3
+- Base de Datos (MySQL)
+- [Composer](https://getcomposer.org/doc/00-intro.md)
+
+#### Instalación
+Realizar los siguientes pasos en __orden__
+
+- `git clone https://github.com/leifermendez/report-system`
+
+- `composer install`
+
+- Crear `.env` basado en el `.env.example`
+
+- `composer install`
+
+- `php artisan key:generate`
+
+- `php artisan migrate`
+
+- `php artisan db:seed`
+
+> Puedes visitarnos en https://www.codigoencasa.com/te-ayudamos-con-tu-codigo/
