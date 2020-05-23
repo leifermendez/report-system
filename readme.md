@@ -2,6 +2,8 @@
 Sistema de control, gestión y reporte de tareas. El cual nos proporciona una variedad de módulos 
 los cuales se complementan para proporcionar una mejor visualización de hitos sobre nuestro proyecto
 
+Ver [DEMO](https://reportsystemapp.herokuapp.com/)
+
 ![](https://i.imgur.com/AX1MjPv.png)
 
 ![](https://i.imgur.com/iRI7t8t.png)
