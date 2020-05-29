@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="be83bd95-3b8f-4297-bd77-86b0b417c2c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ChartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ChartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/chart/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/chart/view.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +207,8 @@
       <workItem from="1582884412882" duration="4633000" />
       <workItem from="1582891561409" duration="4616000" />
       <workItem from="1582899523326" duration="96000" />
-      <workItem from="1590224812372" duration="2821000" />
+      <workItem from="1590224812372" duration="3430000" />
+      <workItem from="1590760333013" duration="700000" />
     </task>
     <servers />
   </component>
@@ -234,14 +237,6 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="439" y="314" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1582891878951" />
-    <state x="718" y="418" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1581069171746">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state x="718" y="418" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.30.1920.1050@0.30.1920.1050" timestamp="1581069171746" />
-    <state x="489" y="314" key="FileChooserDialogImpl" timestamp="1581072613250">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state x="489" y="314" key="FileChooserDialogImpl/0.30.1920.1050@0.30.1920.1050" timestamp="1581072613250" />
     <state width="1293" height="285" key="GridCell.Tab.0.bottom" timestamp="1582214252308">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
@@ -262,10 +257,6 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.30.1920.1050@0.30.1920.1050" timestamp="1582213285290" />
-    <state x="544" y="483" key="NewPhpFileDialog" timestamp="1581089918250">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state x="544" y="483" key="NewPhpFileDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1581089918250" />
     <state x="413" y="287" width="607" height="536" key="find.popup" timestamp="1582889030603">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
@@ -274,13 +265,9 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="664" y="347" key="git4idea.merge.GitPullDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1582213233263" />
-    <state x="372" y="260" key="run.anything.popup" timestamp="1581082992186">
+    <state x="616" y="208" width="672" height="676" key="search.everywhere.popup" timestamp="1590760838856">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="372" y="260" key="run.anything.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1581082992186" />
-    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1581172868675">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1581172868675" />
+    <state x="616" y="208" width="672" height="676" key="search.everywhere.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1590760838856" />
   </component>
 </project>
