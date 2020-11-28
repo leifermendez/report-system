@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be83bd95-3b8f-4297-bd77-86b0b417c2c2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/ReportApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ReportApp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ChartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ChartController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/chart/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/chart/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/FeaturesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/FeaturesTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/OrganizationsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/OrganizationsTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/ProjectsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ProjectsTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -168,15 +172,15 @@
       <recent name="C:\Users\Leifer\PhpstormProjects\untitled3\public\css" />
     </key>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
+  <component name="RunDashboard">
+    <option name="ruleStates">
       <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
       </list>
     </option>
   </component>
@@ -209,6 +213,8 @@
       <workItem from="1582899523326" duration="96000" />
       <workItem from="1590224812372" duration="3430000" />
       <workItem from="1590760333013" duration="700000" />
+      <workItem from="1606565625429" duration="121000" />
+      <workItem from="1606565760923" duration="1421000" />
     </task>
     <servers />
   </component>
