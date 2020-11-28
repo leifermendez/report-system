@@ -6,8 +6,10 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="description" content="leifer mendez, codigoencasa.com, sistema gratis, sistema de reportes">
+    <meta name="keywords" content="leifer mendez, codigoencasa, php, proyecto universidad">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Laravel') }} | Sistema de reportes  https://github.com/leifermendez/report-system</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/moment/moment.js') }}" defer></script>
