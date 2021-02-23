@@ -2,6 +2,8 @@
 Sistema de control, gestión y reporte de tareas. El cual nos proporciona una variedad de módulos 
 los cuales se complementan para proporcionar una mejor visualización de hitos sobre nuestro proyecto
 
+<a href="https://www.buymeacoffee.com/leifermendez" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+
 Ver [DEMO](https://reportsystemapp.herokuapp.com/)
 
 ![](https://i.imgur.com/AX1MjPv.png)
@@ -11,11 +13,11 @@ Ver [DEMO](https://reportsystemapp.herokuapp.com/)
 ![](https://i.imgur.com/RoNY25H.png)
 ---
 
+
+
 #### Demo
 
 Ver [DEMO](https://reportsystemapp.herokuapp.com/)
-
-<a href="https://www.buymeacoffee.com/leifermendez" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
 User: `demo@demo.com`
 
