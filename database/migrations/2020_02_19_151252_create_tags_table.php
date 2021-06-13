@@ -18,7 +18,7 @@ class CreateTagsTable extends Migration
             $table->string('name');
             $table->string('color')->default('#eaeaea');
             $table->integer('projects_id');
-            $table->text('description');
+            $table->text('description')->nullable()->default(null);
             $table->timestamp('start_at');
             $table->timestamp('deadline_at');
             $table->timestamps();
